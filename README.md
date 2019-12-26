@@ -6,7 +6,7 @@
 * VS 2017
 
 
-## ## Build on Windows
+## Build on Windows
 
 ## Visual Studio
 Run generate.bat from Scripts/Windows folder. Solutions will be generated in SampleProjectCPP/build/Win32 and SampleProjectCPP/build/x64.
