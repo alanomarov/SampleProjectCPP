@@ -15,10 +15,10 @@ Run generate.bat from Scripts/Windows folder. Solutions will be generated in Sam
 ## Build on Mac OS
 
 ## XCode
-Run generate.sh from Scripts/Mac folder. Use Qt path as script parameter. Xcode project will be generated in SampleProjectCPP/build.
+Run generate.sh from Scripts/Mac folder. Xcode project will be generated in SampleProjectCPP/build.
 
 
 ## Build on Linux
 
 ## Makefile
-Run generate_stt.sh from Scripts/Linux folder. Use Qt path as script parameter. Makefiles will be generated in SampleProjectCPP/build/Debug and SampleProjectCPP/build/Release.
+Run generate_stt.sh from Scripts/Linux folder. Makefiles will be generated in SampleProjectCPP/build/Debug and SampleProjectCPP/build/Release.
