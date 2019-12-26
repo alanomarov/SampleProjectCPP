@@ -25,8 +25,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${PLATFORM}/${CMAKE_B
 message(STATUS "Output directory: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
 # application
-file(GLOB_RECURSE HEADERS sources/*.h)
-file(GLOB_RECURSE SOURCES sources/*.cpp sources/*.c)
+file(GLOB_RECURSE HEADERS Sources/*.h)
+file(GLOB_RECURSE SOURCES Sources/*.cpp Sources/*.c)
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 # verbose output
