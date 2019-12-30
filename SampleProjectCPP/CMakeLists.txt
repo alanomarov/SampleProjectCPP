@@ -25,9 +25,33 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${PLATFORM}/${CMAKE_B
 message(STATUS "Output directory: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
 # application
-file(GLOB_RECURSE HEADERS Sources/*.h)
-file(GLOB_RECURSE SOURCES Sources/*.cpp Sources/*.c)
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+set(SOURCES 
+	Sources/Controllers/ControllerOne.cpp
+	Sources/Controllers/ControllerOne.h
+	Sources/Controllers/ControllerTwo.cpp
+	Sources/Controllers/ControllerTwo.h
+
+	Sources/Models/ModelOne.cpp
+	Sources/Models/ModelOne.h
+	Sources/Models/ModelTwo.cpp
+	Sources/Models/ModelTwo.h
+
+	Sources/Views/ViewOne.cpp
+	Sources/Views/ViewOne.h
+	Sources/Views/ViewTwo.cpp
+	Sources/Views/ViewTwo.h
+	
+	Sources/main.cpp
+)
+
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCES})
+
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+include_directories (Sources)
+
+# set project as startup project in VS
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
 
 # verbose output
 #set(CMAKE_VERBOSE_MAKEFILE ON)

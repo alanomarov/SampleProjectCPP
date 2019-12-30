@@ -1,0 +1,5 @@
+class ViewOne
+{
+	public:
+		ViewOne();
+};

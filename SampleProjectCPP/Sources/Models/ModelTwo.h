@@ -1,0 +1,5 @@
+class ModelTwo
+{
+	public:
+		ModelTwo();
+};
